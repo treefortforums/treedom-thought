@@ -9,7 +9,7 @@ var async = require('async');
 //Index Router
 exports.nav = function(req, res){
 
-	let donationArray = [21, 22];
+	let donationArray;
 	let totalDonation = 0;
 
 	for(let i = 0; i < donationArray.length; i++){
@@ -47,16 +47,7 @@ exports.creator_list = function(req, res, next){
 // Display detal page for a specific creator
 
 exports.creator_detail = function(req, res, next){
-
-	Creator.findById(req.params.id)
-	.populate('creator')
-	.sort([['title', 'ascending']])
-	.exec(function(err, list_titles){
-		if(err){return next(err);}
-		//On Success
-		res.render('creator_detail', {title: "Da Fuk", creator_detail: "Placeholder"});
-	})	
-
+   res.send('Creator Detail' + req.params.id);
 };
 
 exports.creator_success = function(req, res, next){
