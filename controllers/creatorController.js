@@ -9,7 +9,7 @@ var async = require('async');
 //Index Router
 exports.nav = function(req, res){
 
-	let donationArray = [21, 22, 881, 99];
+	let donationArray = [21, 22];
 	let totalDonation = 0;
 
 	for(let i = 0; i < donationArray.length; i++){
