@@ -1,0 +1,11 @@
+extends template
+
+block content
+  div.main
+    h1 Creator: #{title}
+
+
+    ul
+      each post in creator_detail
+        li(class="titles")
+          a(href="https://www.treefortforums.net/forum/brainy-stuff/psychedelics-aa/16548-psilocybin-research") #{post.title}

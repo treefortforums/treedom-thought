@@ -1,0 +1,41 @@
+extends template
+
+block content
+  div.main
+    
+    
+    p Register below to be a Treefort Content Creator
+    br
+    
+    
+    form(method="POST" action="")
+      div(class="form-group row")
+        label(for="username" class="col-md-3 col-form-label") Your Treefort Username 
+        div(class="col-md-9")
+            input(type="text" name="username" class="form-control" id="userName" placeholder="Username" required)
+      div(class="form-group row")
+        label(for="email" class="col-md-3 col-form-label") Your Paypal Email Address
+        div(class="col-md-9")
+            input(type="email" name="email" class="form-control" id="email" placeholder="Email" required)
+      div(class="form-group row")
+        label(for="category" class="col-md-3 col-form-label") Thread
+        div(class="col-md-9")
+          select(name="category" class="form-control" id="thread")
+            option(value="music" selected) Music
+            option(value="art") Art
+            option(value="photography") Photography
+            option(value="poetry") Poetry
+            option(value="essays") Essays and Short Stories
+            option(value="performing_arts") Performing Arts
+            option(value="cooking") Cooking
+            option(value="how_to") How To
+      div(class="form-group row")
+        label(for="title" class="col-md-3 col-form-label") Post Title
+        div(class="col-md-9")
+          input(type="text" name="title" class="form-control" id="post" placeholder="Post Name or #" required)
+        input(class="btn btn-success btn-lg col-md-3 offset-md-3" type="submit"    id="creator-submit" value="Submit" style="margin-bottom:20px;")
+
+    //- button.btn.btn-success(type="submit") Submit 
+
+
+

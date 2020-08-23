@@ -1,0 +1,17 @@
+extends template
+
+
+block content
+  div.main
+    h1(class="creators_title")= title
+
+    ul
+      each creator in creator_list
+        li(class="creators bg-success text-info")
+          a(href=creator.url class="text-light") #{creator.username}
+          
+            
+      else
+        li There are no Creators
+
+    
