@@ -11,13 +11,15 @@ var compression = require('compression');
 var helmet = require('helmet');
 
 var app = express();
-
+/*
 //Mongo DB
 var mongoose = require('mongoose');
 var mongoDB =  process.env.MONGODB_URI;
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
+
+*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
