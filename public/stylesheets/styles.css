@@ -1,11 +1,11 @@
 
 body {
-	background-image: url("green_cup.png");
+	background-image: url("images/green_cup.png");
 	background-color: #5F6A6A;
 }
 
 form div, .main {
-	background-image: url("header.jpg");
+	background-image: url("images/header.jpg");
 	background-color: #F2F4F4;
 	padding: 30px;
 	font-size: 1.1em;
@@ -13,7 +13,7 @@ form div, .main {
 }
 
 header {
-	background-image: url("middlebackground.jpg");
+	background-image: url("images/middlebackground.jpg");
 	background-color: green;
 }
 
