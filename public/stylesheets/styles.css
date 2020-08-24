@@ -1,6 +1,6 @@
 
 body {
-	background-image: url("https://treefortforums-creators.s3-us-west-1.amazonaws.com/green_cup_clone.png");
+	background-image: url("https://treefortforums-bucket.s3-us-west-1.amazonaws.com/green_cup_clone.png");
 	background-color: #5F6A6A;
 }
 
@@ -13,7 +13,7 @@ form div, .main {
 }
 
 header {
-	background-image: url("https://treefortforums-creators.s3-us-west-1.amazonaws.com/image_50_clone.png");
+	background-image: url("https://treefortforums-bucket.s3-us-west-1.amazonaws.com/middlebackground_clone.jpg");
 	background-color: green;
 }
 
