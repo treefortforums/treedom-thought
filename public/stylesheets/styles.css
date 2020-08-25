@@ -1,11 +1,11 @@
 
 body {
-	background-image: url("../public/images/green_cup.png");
+	background-image: url("https://i.imgur.com/5rzzc8G.png");
 	background-color: #5F6A6A;
 }
 
 form div, .main {
-	background-image: url("../public/images/middlebackground.jpg");
+	background-image: url("https://i.imgur.com/VRgp8Y6.jpg");
 	background-color: #F2F4F4;
 	padding: 30px;
 	font-size: 1.1em;
@@ -13,7 +13,7 @@ form div, .main {
 }
 
 header {
-	background-image: url("../public/images/header.jpg");
+	background-image: url("https://i.imgur.com/oLbmYdR.jpg");
 	background-color: green;
 }
 
