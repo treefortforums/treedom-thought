@@ -1,77 +1,40 @@
-doctype 
-html
-  head
-    style
-      include ../public/stylesheets/styles.css
-    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
-    link(rel="stylesheet")
-    //- Css only
-    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
-    //- Js, Popper.js Jquery
-    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
-    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
-    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous")
-    meta(name="viewport" content="width-device-width, initial-scale=1, viewport-fit=cover")
-    //var siteName = "Treefort Creators"
-    title= "TreefortCreators"
-  main
-  body
-    div.container
-      header.jumbotron
-        
-        a(href="#" id="logo"):  img(src="images/image_50.png" alt="Treefort")
-        h1(style="text-align:left; margin-left:15%; font-size:4em; color:white;") Treefort Creators
-        div(style="clear:both")
+extends template
 
-        nav.mainmenu
-          a(href="https://www.treefortforums.net/") TREEFORT
-          a(href="https://www.treefortforums.net/blogs") BLOGS
-          a(href="https://www.treefortforums.net/forum") PAGES
-          a(href="https://www.treefortforums.net/support-us") SUPPORT TREEFORT
-      div.main
+block content
+  div.main
     
     
-        p Register below to be a Treefort Content Creator
-        br
+    p Register below to be a Treefort Content Creator
+    br
     
     
-        form(method="POST" action="")
-          div(class="form-group row")
-            label(for="username" class="col-md-3 col-form-label") Your Treefort Username 
-            div(class="col-md-9")
-                input(type="text" name="username" class="form-control" id="userName" placeholder="Username" required)
-          div(class="form-group row")
-            label(for="email" class="col-md-3 col-form-label") Your Paypal Email Address
-            div(class="col-md-9")
-                input(type="email" name="email" class="form-control" id="email" placeholder="Email" required)
-          div(class="form-group row")
-            label(for="category" class="col-md-3 col-form-label") Thread
-            div(class="col-md-9")
-              select(name="category" class="form-control" id="thread")
-                option(value="music" selected) Music
-                option(value="art") Art
-                option(value="photography") Photography
-                option(value="poetry") Poetry
-                option(value="essays") Essays and Short Stories
-                option(value="performing_arts") Performing Arts
-                option(value="cooking") Cooking
-                option(value="how_to") How To
-          div(class="form-group row")
-            label(for="title" class="col-md-3 col-form-label") Post Title
-            div(class="col-md-9")
-              input(type="text" name="title" class="form-control" id="post" placeholder="Post Name or #" required)
-            input(class="btn btn-success btn-lg col-md-3 offset-md-3" type="submit"    id="creator-submit" value="Submit" style="margin-bottom:20px;")
-
-      footer(class="gfoot mt-5")
-        a(class="btn btn-warning btn-sm" href="/") Treefort Creators Home
-        a(href="https://www.treefortforums.net/help") HELP
-        a(href="https://www.treefortforums.net/contact-us") CONTACT US
-        a(href="https://www.treefortforums.net/TermsOfUse") TERMS OF USE
-        a(href="https://www.treefortforums.net/privacy") PRIVACY
-        a(class="text-nowrap" href="#top" style="border-right:none;") GO TO TOP
+    form(method="POST" action="")
+      div(class="form-group row")
+        label(for="username" class="col-md-3 col-form-label") Your Treefort Username 
+        div(class="col-md-9")
+            input(type="text" name="username" class="form-control" id="userName" placeholder="Username" required)
+      div(class="form-group row")
+        label(for="email" class="col-md-3 col-form-label") Your Paypal Email Address
+        div(class="col-md-9")
+            input(type="email" name="email" class="form-control" id="email" placeholder="Email" required)
+      div(class="form-group row")
+        label(for="category" class="col-md-3 col-form-label") Thread
+        div(class="col-md-9")
+          select(name="category" class="form-control" id="thread")
+            option(value="music" selected) Music
+            option(value="art") Art
+            option(value="photography") Photography
+            option(value="poetry") Poetry
+            option(value="essays") Essays and Short Stories
+            option(value="performing_arts") Performing Arts
+            option(value="cooking") Cooking
+            option(value="how_to") How To
+      div(class="form-group row")
+        label(for="title" class="col-md-3 col-form-label") Post Title
+        div(class="col-md-9")
+          input(type="text" name="title" class="form-control" id="post" placeholder="Post Name or #" required)
+        input(class="btn btn-success btn-lg col-md-3 offset-md-3" type="submit"    id="creator-submit" value="Submit" style="margin-bottom:20px;")
 
     //- button.btn.btn-success(type="submit") Submit 
-
-
 
 
