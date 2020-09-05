@@ -12,10 +12,10 @@ var donation_controller = require('../controllers/donationController');
 router.get('/', creator_controller.nav);
 
 //Get request for create creator
-router.get('/creator/create', creator_controller.creator_create_get);
+router.get('/creator', creator_controller.creator_create_get);
 
 //POST request for create creators
-router.post('/creator/create', creator_controller.creator_create_post);
+router.post('/creator', creator_controller.creator_create_post);
 
 
 // GET request for one creators
@@ -45,10 +45,10 @@ router.get('/creator/categories', creator_controller.creator_get_categories);
 // Donation Route
 
 //GET Request for Donation
-router.get('/donation/create', donation_controller.donation_create_get);
+router.get('/donation', donation_controller.donation_create_get);
 
 //POST request
-router.post('/donation/create', donation_controller.donation_create_post);
+router.post('/donation', donation_controller.donation_create_post);
 
 //GET ID
 router.get('/donation/:id', donation_controller.donation_detail);

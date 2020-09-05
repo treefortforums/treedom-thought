@@ -1,12 +1,14 @@
 extends template
 
-          
-
 block content
 
 
   div.main
-    div(class="border border-info donate-info") Support Treefort Content Creators and Treefort! With your donation, 75% of the donation will go to the Content Creator and 25% of the Donation will go to Treefort. Treefort handles all Paypal processing and currency exchange rate fees. Our platform maintains privacy to Creators as well as to Donators. Once the form is filled out and submitted, a confirmation screen and button to link to paypal will appear for you to send the donation to the Paypal Treefort account. Please allow 48 hours to see a confirmation sent to the content creator.
+    div(class="border border-info donate-info") Support Treefort Content Creators and Treefort! With your donation, 75% of the donation will go to the Content Creator and 25% of the Donation will go to Treefort. Treefort handles all Paypal processing and currency exchange rate fees. Our platform maintains privacy to Creators as well as you. To continue, click the Donate Through Paypal Button and send the donation in full. After you have completed that, fill out the form below detailing information about the donation and click Submit. Upon Success, you will be redirected to a Success page and your information will be stored.
+
+    a(href ="https://www.paypal.me/treefortforums" target="_blank")
+        button(id="dnate" class="btn btn-warning text-center text-light") Donate Through PayPal
+ 
     
 
 
@@ -24,17 +26,17 @@ block content
         div(class="col-md-9")
           input(type="text" name="title" class="form-control" id="post" placeholder="Post Title Name or #" required)
       div(class="form-group row")
-        label(for="category" class="col-md-3 col-form-label") Category Thread
+        label(for="category" class="col-md-3 col-form-label") Thread Title
         div(class="col-md-9")
           select(name="category" class="form-control" id="thread")
-            option(value="music") Music
             option(value="art") Art
+            option(value="cooking") Cooking
+            option(value="essays") Essays and Short Stories
+            option(value="how_to") How To
+            option(value="music" selected) Music
+            option(value="performing_arts") Performing Arts
             option(value="photography") Photography
             option(value="poetry") Poetry
-            option(value="essays") Essays and Short Stories
-            option(value="performing_arts") Performing Arts
-            option(value="cooking") Cooking
-            option(value="how_to") How to
       div(class="form-group row")
         label(for="amount" class="col-md-3 col-form-label") Donation Amount
         div(class="col-md-3")
@@ -49,7 +51,7 @@ block content
             option(vlaue="ZAR") ZAR
         div(class="col-md-6")
           input(type="number" name="amount" class="form-control" id="amount" placeholder="Donation Amount" min="5" max="10000" required)
-      div(class="btn-group d-flex flex-col")
-        input(class="btn btn-success btn-lg col-md-3 offset-md-6" type="submit" value="Submit" id = "submit")
 
-    
+      div(class="btn-group d-flex flex-col")
+        input(class="btn btn-success btn-lg col-md-3 offset-md-6 text-justify" type="submit" value="Submit" id = "submit")
+

@@ -6,12 +6,21 @@ block content
     h1(class="creators_title")= title
 
     ul
-      each creator in creator_list
+      - 
+        var creatorArr = []
+
+        for(var i = 0; i < creator_list.length; i++){
+          creatorArr.push(creator_list[i].username);
+        }
+
+        var creatorSet = [...new Set(creatorArr)]
+
+
+    
+      each creator in creatorSet
         li(class="creators bg-success text-info")
-          a(href=creator.url class="text-light") #{creator.username}
+          a(href=creator.url class="text-light") #{creator}
           
             
       else
         li There are no Creators
-
-    
