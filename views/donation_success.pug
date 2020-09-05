@@ -4,7 +4,7 @@ extends template
 block content
   div.main
 
-    h1(class="text-success text-center success")  #{title}  #{donation.username}. You have donated #{donation.currency} #{donation.amount} to #{donation.recipient}
+    h1(class="text-success text-center success")  #{title}  #{donation.username}. You have donated } #{donation.amount * .75} #{donation.currency} to #{donation.recipient}
 
    
     
