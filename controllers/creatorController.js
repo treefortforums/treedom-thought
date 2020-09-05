@@ -100,7 +100,7 @@ exports.creator_create_post = [
 				if(err){return next(err);}
 				//Success so redirect
 				//res.redirect(creator.url);
-				res.render('creator_success', {title: 'Success!'});
+				res.render('creator_success', {title: 'Success!', creator: req.body});
 			});
 		}
 	}
