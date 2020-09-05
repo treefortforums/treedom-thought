@@ -73,7 +73,7 @@ exports.donation_create_post = [
                 if(err){return next(err);}
                 // On Success
                 //res.redirect(donation.url);
-                res.render('donation_success', {title: 'Success! Thank you for your contribution', donation: req.body});
+                res.render('donation_success', {title: 'Success! Thank you for your donation ', donation: req.body});
             });
     	}
     }
