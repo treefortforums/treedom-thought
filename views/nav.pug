@@ -5,8 +5,8 @@ block content
     h2(class="greeting") Welcome to Treefort Creators!
     p(class="greeting") Click the Donate button to make a donation, or the Creators button to register as a Treefort Creator.
     div(class="d-md-flex flex-column-center justify-content-center dc-margins")
-      a(class="btn btn-success btn-lg ml-5 mr-5 w-50 p-3", href="./content/donation") Donate
-      a(class="btn btn-warning btn-lg ml-5 mr-5 w-50 p-3", href="./content/creator") Creator
+      a(class="btn btn-success btn-lg ml-5 mr-5 w-50 p-3 text-center", href="./content/donation") Donate
+      a(class="btn btn-warning btn-lg ml-5 mr-5 w-50 p-3 text-center", href="./content/creator") Creator
     hr
     h2(class="greeting") Check out the Family Tree!
     if error
@@ -14,6 +14,6 @@ block content
     else
       h2 #[strong Total Donations: ] $!{data}
     div(class="btn-group d-flex flex-col")
-      a(class="btn btn-outline-success text-dark" href="./content/donations") Donators
-      a(class= "btn btn-outline-warning text-dark" href="./content/creators") Creators
+      a(class="btn btn-outline-success text-dark text-center" href="./content/donations") Donators
+      a(class= "btn btn-outline-warning text-dark text-center" href="./content/creators") Creators
 
