@@ -48,6 +48,18 @@ header {
 	margin-bottom: -6%;
 }
 
+@media(max-width: 900px){
+	.mainmenu{
+		text-decoration: none;
+		font-size: 1.5em;
+		font-family: Impact, sans-serif;
+		font-weight: bold;
+		margin-top: 3%;
+		margin-bottom: -6%;
+	}
+}
+
+
 @media(max-width: 550px){
 	.mainmenu{
 		text-decoration: none;
@@ -59,16 +71,6 @@ header {
 	}
 }
 
-@media(max-width: 900px){
-	.mainmenu{
-		text-decoration: none;
-		font-size: 1.5em;
-		font-family: Impact, sans-serif;
-		font-weight: bold;
-		margin-top: 3%;
-		margin-bottom: -6%;
-	}
-}
 
 
 .mainmenu a {
@@ -185,9 +187,3 @@ header {
 	font-family: trebuchet, sans-serif;
 }
 
-@media(max-width: 550px){
-	.group{
-		position: relative;
-		left: -20px;
-	}
-}
