@@ -59,6 +59,17 @@ header {
 	}
 }
 
+@media(max-width: 900px){
+	.mainmenu{
+		text-decoration: none;
+		font-size: 1.5em;
+		font-family: Impact, sans-serif;
+		font-weight: bold;
+		margin-top: 3%;
+		margin-bottom: -6%;
+	}
+}
+
 
 .mainmenu a {
 	padding-right: 30px;
@@ -175,7 +186,7 @@ header {
 }
 
 @media(max-width: 550px){
-	.groups{
+	.group{
 		position: relative;
 		left: -20px;
 	}
