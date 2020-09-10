@@ -51,7 +51,7 @@ header {
 @media(max-width: 550px){
 	.mainmenu{
 		text-decoration: none;
-		font-size: 0.3em;
+		font-size: 0.8em;
 		font-family: Impact, sans-serif;
 		font-weight: bold;
 		margin-top: 3%;
@@ -172,4 +172,10 @@ header {
 	padding: 10px;
 	font-size: 0.9em;
 	font-family: trebuchet, sans-serif;
+}
+
+@media(max-width: 550px){
+	.groups{
+		padding-right: 10%;
+	}
 }
