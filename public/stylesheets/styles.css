@@ -4,12 +4,20 @@ body {
 	background-color: #5F6A6A;
 }
 
+
+
 form div, .main {
 	background-image: url("../images/middlebackground.jpg"); 
 	background-color: #F2F4F4;
 	padding: 30px;
 	font-size: 1.1em;
 	margin-top: -1em;
+}
+
+@media only screen and(max-width: 500px){
+	form div, .main{
+		margin-top: 0em;
+	}
 }
 
 header {
@@ -44,11 +52,11 @@ header {
 	margin-bottom: -6%;
 }
 
-/*
 
-@media(max-width: 600px){
+
+@media only screen and(max-width: 600px){
 	.mainmenu a{
-		padding-right: 10px;
+		visibility: hidden;
 	}
 }
 */
