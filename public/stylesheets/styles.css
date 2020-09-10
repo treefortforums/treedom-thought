@@ -48,10 +48,27 @@ header {
 	margin-bottom: -6%;
 }
 
+@media(max-width: 550px){
+	.mainmenu{
+		text-decoration: none;
+		font-size: 0.3em;
+		font-family: Impact, sans-serif;
+		font-weight: bold;
+		margin-top: 3%;
+		margin-bottom: -6%;
+	}
+}
+
 
 .mainmenu a {
 	padding-right: 30px;
-	overflow-x: auto;
+
+}
+
+@media(max-width: 550px){
+	.mainmenu a{
+		padding-right: 5px;
+	}
 }
 
 
