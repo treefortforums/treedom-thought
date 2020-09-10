@@ -9,7 +9,7 @@ form div, .main {
 	background-color: #F2F4F4;
 	padding: 30px;
 	font-size: 1.1em;
-	margin-top: 13px;
+	margin-top: -33px;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 #logo {
 	float: left;
 }
-
+/*
 @media(max-width: 600px){
 	.mainmenu{
 		text-decoration: none;
@@ -33,6 +33,7 @@ header {
 		margin-bottom: -6%;
 	}
 }
+*/
 
 .mainmenu {
 	text-decoration: none;
@@ -43,14 +44,14 @@ header {
 	margin-bottom: -6%;
 }
 
-
+/*
 
 @media(max-width: 600px){
 	.mainmenu a{
 		padding-right: 10px;
 	}
 }
-
+*/
 .mainmenu a {
 	padding-right: 30px;
 }
