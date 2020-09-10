@@ -173,9 +173,3 @@ header {
 	font-size: 0.9em;
 	font-family: trebuchet, sans-serif;
 }
-
-@media(max-width: 550px){
-	.groups{
-		padding-right: 10%;
-	}
-}
