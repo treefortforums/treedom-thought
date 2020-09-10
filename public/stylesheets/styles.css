@@ -11,14 +11,10 @@ form div, .main {
 	background-color: #F2F4F4;
 	padding: 30px;
 	font-size: 1.1em;
-	margin-top: -1em;
+	margin-top: -0.4em;
 }
 
-@media only screen and(max-width: 500px){
-	form div, .main{
-		margin-top: 0em;
-	}
-}
+
 
 header {
  	background-image: url("../images/header.jpg"); 
@@ -53,13 +49,6 @@ header {
 }
 
 
-
-@media only screen and(max-width: 600px){
-	.mainmenu a{
-		visibility: hidden;
-	}
-}
-*/
 .mainmenu a {
 	padding-right: 30px;
 }
