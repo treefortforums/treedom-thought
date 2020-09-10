@@ -50,7 +50,8 @@ header {
 
 
 .mainmenu a {
-	padding-right: 2vh;
+	padding-right: 30px;
+	overflow-x: auto;
 }
 
 
