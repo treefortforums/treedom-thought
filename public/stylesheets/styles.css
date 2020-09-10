@@ -11,7 +11,7 @@ form div, .main {
 	background-color: #F2F4F4;
 	padding: 30px;
 	font-size: 1.1em;
-	margin-top: -0.4em;
+	margin-top: -0.2em;
 }
 
 
@@ -50,7 +50,7 @@ header {
 
 
 .mainmenu a {
-	padding-right: 30px;
+	padding-right: 2vh;
 }
 
 
