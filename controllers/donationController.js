@@ -67,7 +67,8 @@ exports.donation_create_post = [
                 title: req.body.title,
                 category: req.body.category, 
                 currency: req.body.currency,
-    			amount: req.body.amount
+    			amount: req.body.amount,
+    			postDate: new Date().toDateString();
     		});
             donation.save(function(err){
                 if(err){return next(err);}
