@@ -10,8 +10,6 @@ var DonationSchema = new Schema({
 	category: {type: String, required: true, maxlength: 30},
 	currency: {type: String, required: true},
 	amount: {type: Number, required: true}
-
-	
 });
 
 //Create a url for Donations
