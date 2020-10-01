@@ -9,7 +9,7 @@ block content
       each donation in donation_list
         - var donateDate = new Date()
         li(class="donations bg-success")
-          a(href=donation.url class="text-light") #{donation.username} to #{donation.recipient} - #{donateDate.postDate}
+          a(href=donation.url class="text-light") #{donation.username} to #{donation.recipient} - #{donateDate.toDateString()}
           
             
       else

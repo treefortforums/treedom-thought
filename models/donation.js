@@ -9,8 +9,8 @@ var DonationSchema = new Schema({
 	title: {type: String, required: true, maxlength: 30},
 	category: {type: String, required: true, maxlength: 30},
 	currency: {type: String, required: true},
-	amount: {type: Number, required: true},
-	postDate: {type: Date}
+	amount: {type: Number, required: true}
+
 	
 });
 
