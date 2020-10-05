@@ -13,25 +13,18 @@ var helmet = require('helmet');
 var app = express();
 
 
-//Mongo DB
-/*
+
 var mongoose = require('mongoose');
 var MongoClient = require('mongodb').MongoClient;
-var mongoDB =  process.env.MONGODB_URI;
+//process.env.MONGODB_URI
+var mongoDB =  "mongodb+srv://treefortforums:St0n3D3ch0@clustertreefort.4z8xo.mongodb.net/treefortforums?retryWrites=true&w=majority;"
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
-*/
 
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = process.env.MONGODB_URI;
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
+
 
 
 // view engine setup
