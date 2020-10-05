@@ -14,11 +14,24 @@ var app = express();
 
 
 //Mongo DB
+/*
 var mongoose = require('mongoose');
+var MongoClient = require('mongodb').MongoClient;
 var mongoDB =  process.env.MONGODB_URI;
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
+*/
+
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = process.env.MONGODB_URI;
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 
 // view engine setup
